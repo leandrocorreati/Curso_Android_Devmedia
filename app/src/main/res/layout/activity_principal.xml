@@ -6,48 +6,57 @@
     android:layout_height="match_parent"
     tools:context="br.com.devmedia.mobile.signos.Principal">
 
-    <TextView
-        android:id="@+id/textView2"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="224dp"
-        android:layout_toEndOf="@+id/textView"
-        android:text="TextView" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_marginTop="39dp" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="49dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/spinner2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginBottom="29dp"
-        android:text="TextView" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/zodíaco" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/spinner"
-        android:layout_marginBottom="61dp"
-        android:layout_marginStart="77dp"
-        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
         android:text="Button" />
+
+    <TextView
+        android:id="@+id/textDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="66dp"
+        android:text="@string/dia" />
+
+    <Spinner
+        android:id="@+id/spinnerDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignStart="@+id/textDia"
+        android:layout_alignTop="@+id/textDia"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:id="@+id/textMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spinnerDia"
+        android:layout_below="@+id/spinnerDia"
+        android:layout_marginTop="19dp"
+        android:text="@string/mes" />
+
+    <Spinner
+        android:id="@+id/spinnerMes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinnerDia"
+        android:layout_alignStart="@+id/textMes"
+        android:layout_alignTop="@+id/textMes"
+        android:layout_marginTop="29dp" />
 
 </RelativeLayout>
