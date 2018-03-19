@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A tag TableLayout serve para definir que o layout apresentado terá caracteristica de tabela, com linhas e colunas -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100px"
+    tools:context="br.com.devmedia.mobile.signos.Resultado">
+    <!-- O parametro android:layout_marginTop, serve para dfefinir uma borda no topo do layout a aplicação.-->
+
+    <!-- A tag TableRow serve para definir as linhas inseridas em uma TableLayout-->
+    <TableRow android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgSigno"
+            android:layout_width="350px"
+            android:layout_height="350px"
+            app:srcCompat="@drawable/aquarius" />
+    </TableRow>
+
+    <TableRow android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textSigno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </TableRow>
+    <TableRow android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </TableRow>
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar" />
+    </TableRow>
+
+</TableLayout>
