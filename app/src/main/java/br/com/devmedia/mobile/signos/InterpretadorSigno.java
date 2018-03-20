@@ -12,18 +12,18 @@ public class InterpretadorSigno /* Classe para interpretar qual é o signo do us
                                                                 para seus parametros*/
 
     {{ //INICIO - DOUBLE BRACKET INITIALIZATION
-        add(new Signo(20, 1, 18, 2, "Aquário", "@drawable/aquario"));
-        add(new Signo(19, 2, 20, 3, "Peixes", "@drawable/aquario"));
-        add(new Signo(21, 3, 19, 4, "Aries", "@drawable/aquario"));
-        add(new Signo(20, 4, 20, 5, "Touro", "@drawable/aquario"));
-        add(new Signo(21, 5, 20, 6, "Gemeos", "@drawable/aquario"));
-        add(new Signo(21, 6, 22, 7, "Cancêr", "@drawable/aquario"));
-        add(new Signo(23, 7, 22, 8, "Leão", "@drawable/aquario"));
-        add(new Signo(23, 8, 22, 9, "Virgem", "@drawable/aquario"));
-        add(new Signo(23, 9, 22, 10, "Libra", "@drawable/aquario"));
-        add(new Signo(23, 10, 21, 11, "Escorpião", "@drawable/aquario"));
-        add(new Signo(22, 11, 21, 12, "Sagitario", "@drawable/aquario"));
-        add(new Signo(22, 12, 19, 1, "Capricornio", "@drawable/aquario"));
+        add(new Signo(20, 1, 18, 2, "Aquário", "@drawable/aquarius"));
+        add(new Signo(19, 2, 20, 3, "Peixes", "@drawable/peixes"));
+        add(new Signo(21, 3, 19, 4, "Aries", "@drawable/aries"));
+        add(new Signo(20, 4, 20, 5, "Touro", "@drawable/taurus"));
+        add(new Signo(21, 5, 20, 6, "Gemeos", "@drawable/gemeo"));
+        add(new Signo(21, 6, 22, 7, "Cancêr", "@drawable/cancer"));
+        add(new Signo(23, 7, 22, 8, "Leão", "@drawable/leon"));
+        add(new Signo(23, 8, 22, 9, "Virgem", "@drawable/virgo"));
+        add(new Signo(23, 9, 22, 10, "Libra", "@drawable/libra"));
+        add(new Signo(23, 10, 21, 11, "Escorpião", "@drawable/escorpiao"));
+        add(new Signo(22, 11, 21, 12, "Sagitario", "@drawable/sagitario"));
+        add(new Signo(22, 12, 19, 1, "Capricornio", "@drawable/capricornio"));
     }};//FIM - DOUBLE BRACKET INITIALIZATION
 
     public Signo interpretador(int dia, int mes)// Metodo do tipo Signo, que irá ser chamado para que o usuário passe o dia e mes de nascimento
