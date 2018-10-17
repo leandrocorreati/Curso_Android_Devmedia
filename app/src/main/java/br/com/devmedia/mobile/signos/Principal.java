@@ -41,8 +41,8 @@ public class Principal extends AppCompatActivity
         setContentView(R.layout.activity_principal);
 
         /* A classe R permite acessar os elementos do xml na classe Java, ela serve como um intermediador entre o Java e XML */
-        spinnerDia = (Spinner) findViewById(R.id.spinnerDia);
-        spinnerMes = (Spinner) findViewById(R.id.spinnerMes);
+        spinnerDia = findViewById(R.id.spinnerDia);
+        spinnerMes = findViewById(R.id.spinnerMes);
 
         /* O "ArrayAdapter" serve para pegar os dados de um vetor(array), o ArrayAdapter irá pegar os dados dos vetores xml: dias e meses.
             note que a classe R está fazendo o intermedio entre o Java e o XML */
